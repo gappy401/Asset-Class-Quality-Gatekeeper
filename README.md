@@ -1,5 +1,7 @@
 # Renewable Project Atlas
 
+A prototype geospatial data platform built for Syracuse University — demonstrating an end-to-end data engineering pipeline for renewable energy siting intelligence.This project addresses a real challenge in the renewable energy industry: developers building solar and wind farms must manually research government portals, PDFs, and GIS databases to identify viable build sites and grid connection points. This prototype automates that process — ingesting public federal datasets, running them through a geospatial scoring engine, and surfacing insights through a live interactive dashboard.
+
 Geospatial pipeline + FastAPI microservice + React dashboard for renewable energy siting intelligence.
 
 
