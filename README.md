@@ -49,45 +49,6 @@ npm install
 npm run dev                   # runs on http://localhost:5173
 ```
 
-## Project Structure
-
-```
-renewable-atlas/
-├── pipeline/
-│   ├── ingest.py          # GeoPandas ETL → PostGIS
-│   ├── score.py           # Siting score engine
-│   ├── schema.sql         # PostGIS schema + indexes
-│   └── config.py          # Settings (reads from .env)
-├── api/
-│   ├── main.py            # FastAPI app + all routes
-│   ├── database.py        # SQLAlchemy engine + session
-│   └── models.py          # Pydantic response models
-├── frontend/
-│   ├── src/
-│   │   ├── App.tsx
-│   │   ├── components/
-│   │   │   ├── MapView.tsx
-│   │   │   ├── ScoreCard.tsx
-│   │   │   ├── FilterPanel.tsx
-│   │   │   └── ProjectTable.tsx
-│   │   ├── hooks/
-│   │   │   ├── useProjects.ts
-│   │   │   └── useProjectScore.ts
-│   │   └── state/
-│   │       └── atoms.ts
-│   ├── package.json
-│   └── vite.config.ts
-├── terraform/
-│   ├── main.tf
-│   ├── variables.tf
-│   └── outputs.tf
-├── docker/
-│   └── Dockerfile.api
-├── docker-compose.yml
-├── requirements.txt
-├── .env.example
-└── README.md
-```
 
 ## API Endpoints
 
